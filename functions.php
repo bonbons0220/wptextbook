@@ -30,11 +30,19 @@ function my_favicon_link() {
 }
 add_action( 'wp_head', 'my_favicon_link' );
 
-if ( ! function_exists( 'theme_special_nav' ) ) {
-    function theme_special_nav() {
+/**
+ * Override functions in the parent theme.
+ *
+**/
+//if ( ! function_exists( 'theme_special_nav' ) ) {
+    //function theme_special_nav() {
         //  Do something.
-    }
-}
+    //}
+//}
 
-require_once( get_stylesheet_directory() . '/my_included_file.php' );
+/**
+ * Include a file.
+ *
+**/
+//require_once( get_stylesheet_directory() . '/my_included_file.php' );
 ?>
